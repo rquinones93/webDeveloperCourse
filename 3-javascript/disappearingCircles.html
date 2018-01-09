@@ -39,10 +39,6 @@
       // as of now we don't know how to change that. Just kidding
       // I figured it out
 
-      document.getElementsByClassName( "circle" ).onclick = function() {
-        disappear( "circle" );
-      };
-
       // Red Circle
       document.getElementById("redCircle").onclick = function() {
         // ocument.getElementById("redCircle").style.display = "none";
@@ -63,7 +59,7 @@
 
       // Function for re-usability
       function disappear( name ){
-        document.getElementByClassName( name ).style.display = "none";
+        document.getElementById( name ).style.display = "none";
       }
     </script>
   </body>
