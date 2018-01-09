@@ -10,12 +10,14 @@
 
   <body>
     <!-- Inline JS Example -->
-    <button onclick="alert('Hi!')">Click Me!</button>
-
+    <p id="text">Hello World</p>
+    <button id="myButton">Change Text</button>
     <!-- Internal JS Example -->
     <script type = "text/javascript">
-      // Alert when the page is loaded
-      alert("The page is loaded!");
+      // Changes the content of the tag with this ID on click
+      document.getElementById("myButton").onclick = function() {
+        document.getElementById("text").innerHTML = "Hello Rob!";
+      };
     </script>
   </body>
 
