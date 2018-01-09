@@ -21,6 +21,11 @@
     <!-- Make Text Appear - Simply -->
     <p id="thirdParagraph"></p>
     <button id="thirdButton">Create Text</button>
+
+    <!-- Manipulate Styles with JS -->
+    <p id="moreText">This is more text</p>
+    <button id="styleText">Style Text</button>
+
     <!-- Internal JS Example -->
     <script type = "text/javascript">
       // Changes the content of the tag with this ID on click
@@ -42,7 +47,14 @@
       document.getElementById("thirdButton").onclick = function() {
         document.getElementById("thirdParagraph").innerHTML = "Here I am!";
       };
+
+      // Manipulating Styles Example
+      document.getElementById("styleText").onclick = function() {
+        document.getElementById("moreText").style.color = "red";
+        document.getElementById("moreText").style.fontSize = "50px";
+      };
     </script>
+
   </body>
 
 </html>
