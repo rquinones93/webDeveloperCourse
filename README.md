@@ -1,8 +1,8 @@
 # webDeveloperCourse
 Content from The Complete Web Developer Course by Rob Percival on UDemy.
 
-- [ ] HTML5
-- [ ] CSS
+- [x] HTML5
+- [x] CSS 3
 - [ ] Javascript
 - [ ] jQuery
 - [ ] Bootstrap 4
