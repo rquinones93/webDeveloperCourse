@@ -3,33 +3,54 @@
      and usages of Javascript -->
 
 <html>
-  <head>
-    <title>JavaScript</title>
 
-    <style type="text/css">
-    
-    </style>
-  </head>
+<head>
+  <title>JavaScript</title>
 
-  <body>
-    
-    <input type="text" id="input">
+  <style type="text/css">
 
-    <button id="myButton">Change the Text</button>
+  </style>
+</head>
 
-    <p id="paragraph">This is some text.</p>
+<body>
 
+  <!-- Variables -->
+  <input type="text" id="input">
 
-    <script type="text/javascript">
-      
-      // Changes paragraph value
-      document.getElementById("myButton").onclick = function() {
-        var newText = ""; // Empty string
-        newText = document.getElementById("input").value;
-        document.getElementById("paragraph").innerHTML = newText;
-      };
-    </script>
+  <button id="myButton">Change the Text</button>
+
+  <p id="paragraph">This is some text.</p>
 
 
-  </body>
+
+  <!-- Arrays -->
+
+
+  <script type="text/javascript">
+    // Changes paragraph value - Variables
+    document.getElementById("myButton").onclick = function () {
+      var newText = ""; // Empty string
+      newText = document.getElementById("input").value;
+      document.getElementById("paragraph").innerHTML = newText;
+    };
+
+    // Arrays
+    var myArray = new Array();
+    var tweets = ["Morning everybody!", "I love coffee"];
+    tweets.push( "Back to work!" );
+    tweets.splice( 1, 1 );
+
+    // Fill array with values
+    myArray[0] = "Pizza";
+    myArray[1] = "Chicken Strips";
+    myArray[2] = "Chocolate";
+
+    // Printing to console
+    console.log(myArray);
+    console.log("There are " + myArray.length + " elements in the array.");
+  </script>
+
+
+</body>
+
 </html>
