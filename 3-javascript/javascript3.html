@@ -1,0 +1,42 @@
+<!doctype html>
+<!-- Assumingly this file will each us different concepts
+     and usages of Javascript -->
+<!-- If Statements -->
+<html>
+
+<head>
+  <title>JavaScript</title>
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    Enter the Magic Word: <br>
+    <input type="text" id="userInput" name="magicword"><br>
+
+    <input type="submit" id="submitButton" value="Submit"></input>
+  </form>
+
+  <script type="text/javascript">
+    document.getElementById( "submitButton").onclick = function() {
+
+      var userInput = document.getElementById( "userInput" ).value;
+
+      if( userInput == "Karina" ) {
+        alert( "You've guessed the Magic Word!" );
+
+      } else {
+        alert( "You haven't guessed the Magic Word." );
+      }
+      
+    };
+  </script>
+
+
+</body>
+
+</html>
