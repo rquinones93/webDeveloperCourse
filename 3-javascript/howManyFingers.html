@@ -1,0 +1,49 @@
+<!doctype html>
+<!-- Assumingly this file will each us different concepts
+     and usages of Javascript -->
+<!-- Number Guessing Game -->
+<html>
+
+<head>
+  <title>JavaScript</title>
+
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+
+  <form action="">
+    How many fingers am I holding up? <br>
+    <input type="text" id="userInput" name="magicword">
+
+    <button type="submit" id="submitButton" >Guess!</button>
+  </form>
+
+  <script type="text/javascript">
+
+    // Random number between 0-5
+    var value = Math.floor( ( Math.random() * 5 ) + 1 );
+
+    document.getElementById( "submitButton").onclick = function() {
+
+      var userInput = document.getElementById( "userInput" ).value;
+
+      if( userInput == value ) {
+        alert( "You've guessed right! " + value + " Fingers!" );
+        // New random number to guess
+        value = Math.floor( ( Math.random() * 5 ) + 1 );
+
+      } else {
+        alert( "Try again." );
+        
+      }
+      
+    };
+  </script>
+
+
+</body>
+
+</html>

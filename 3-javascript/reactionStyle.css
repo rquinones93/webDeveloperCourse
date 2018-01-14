@@ -1,0 +1,29 @@
+/* Elements */
+h1, p, span{
+  text-align: center;
+
+}
+
+/* IDs */
+#time, #timeTaken {
+  font-weight: bold;
+
+}
+
+#gameArea {
+  margin: 15px 25px 25px 25px;
+  width: 97%;
+  height: 700px;
+  
+}
+
+#gameObject {
+  display: none;
+  max-width: 300px;
+  max-height: 300px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  position: relative;
+  
+}

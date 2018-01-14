@@ -1,0 +1,60 @@
+<!doctype html>
+<!-- Main file for learning JS -->
+<html>
+
+  <head>
+
+    <title>Javascript</title>
+
+  </head>
+
+  <body>
+    <!-- Inline JS Example -->
+    <!-- Change Text -->
+    <p id="text">Hello World</p>
+    <button id="myButton">Change Text</button>
+
+    <!-- Append Text -->
+    <p id="secondParagraph">Javascript is ... </p>
+    <button id="secondButton">Append Text</button>
+
+    <!-- Make Text Appear - Simply -->
+    <p id="thirdParagraph"></p>
+    <button id="thirdButton">Create Text</button>
+
+    <!-- Manipulate Styles with JS -->
+    <p id="moreText">This is more text</p>
+    <button id="styleText">Style Text</button>
+
+    <!-- Internal JS Example -->
+    <script type = "text/javascript">
+      // Changes the content of the tag with this ID on click
+      document.getElementById("myButton").onclick = function() {
+
+        document.getElementById("text").innerHTML = "Hello Rob!";
+
+      };
+
+      // Append Text Example
+      document.getElementById("secondButton").onclick = function() {
+
+        document.getElementById("secondParagraph").innerHTML = 
+          "I think " + document.getElementById("secondParagraph").innerHTML + " awesome!";
+
+      };
+
+      // Display Text Example
+      document.getElementById("thirdButton").onclick = function() {
+        document.getElementById("thirdParagraph").innerHTML = "Here I am!";
+      };
+
+      // Manipulating Styles Example
+      document.getElementById("styleText").onclick = function() {
+        document.getElementById("moreText").style.color = "red";
+        document.getElementById("moreText").style.fontSize = "50px";
+      };
+    </script>
+
+  </body>
+
+</html>
