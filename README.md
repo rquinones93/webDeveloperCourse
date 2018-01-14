@@ -3,7 +3,7 @@ Content from The Complete Web Developer Course by Rob Percival on UDemy.
 
 - [x] HTML5
 - [x] CSS 3
-- [ ] Javascript
+- [x] Javascript
 - [ ] jQuery
 - [ ] Bootstrap 4
 - [ ] Wordpress
