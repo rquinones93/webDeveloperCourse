@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<!-- Using HTML, CSS, JS, JQuery
+    create a browser code editor that will update
+    a web page in real time 
+  
+    Testing Syntax Highlighting with Highlight.js-->
+
+<html>
+
+<head>
+  <title>Code Runner</title>
+  <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport">
+  <meta content="html">
+
+  <!-- Link to Styling -->
+  <link type="text/css" rel="stylesheet" href="codeRunnerStyle.css">
+  <!-- Link to my JS -->
+  <script type="text/javascript" src="codeRunnerJS.js"></script>
+
+  <!-- Highlight.js Styling -->
+  <link rel="stylesheet" href="highlight/styles/default.css">
+  <!-- Highlight.js -->
+  <script src="highlight/highlight.pack.js"></script>
+  <script>
+    hljs.initHighlightingOnLoad();
+  </script>
+
+</head>
+
+<body>
+  <!-- Top Bar -->
+  <div id="topBar">
+
+    <h2 id="logo"> CodeRunner </h2>
+
+    <div id="buttonContainer">
+      <div class="toggleButton" id="html">HTML</div>
+      <div class="toggleButton">CSS</div>
+      <div class="toggleButton">JavaScript</div>
+      <div class="toggleButton" id="output">Output</div>
+    </div>
+
+  </div>
+
+  <!-- Code Text Areas -->
+  <div id="codeContainer">
+
+
+  </div>
+
+</body>
+
+</html>
