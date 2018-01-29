@@ -26,19 +26,19 @@
   </head>
 
   <body>
-
     <div id="greenCircle"></div>
 
-    <p id="myText">This is some text.</p>
+    <div class="redSquare"></div>
+    <div class="redSquare"></div>
 
     <script type="text/javascript">
-
       $( "#greenCircle" ).click( function() {
-        $( "#myText" ).html( "You clicked the circle!" );
+        $( "#greenCircle" ).css( "background-color", "red" );
+
       });
 
-      $( "#greenCircle" ).hover( function() {
-        $( "#greenCircle").css( "background-color", "red" );
+      $( ".redSquare" ).click( function() {
+        $( this ).css( "display", "none" );
       });
     </script>
 
