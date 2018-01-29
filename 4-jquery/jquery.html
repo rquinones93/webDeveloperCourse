@@ -31,6 +31,9 @@
     <div class="redSquare"></div>
     <div class="redSquare"></div>
 
+    <p id="text">Toggle Me!</p>
+    <button id="toggle">Toggle</button>
+
     <script type="text/javascript">
       $( "#greenCircle" ).click( function() {
         $( "#greenCircle" ).css( "background-color", "red" );
@@ -39,6 +42,18 @@
 
       $( ".redSquare" ).click( function() {
         $( this ).css( "display", "none" );
+      });
+
+      $( "#toggle" ).click( function() {
+        var displayValue = $( "#text" ).css( "display");
+
+        if( displayValue == "none" ){
+          $( "#text" ).fadeIn();
+
+        } else {
+          $( "#text" ).fadeOut();
+          
+        }
       });
     </script>
 
