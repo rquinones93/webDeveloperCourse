@@ -35,26 +35,14 @@
     <button id="toggle">Toggle</button>
 
     <script type="text/javascript">
-
-      $( "#greenCircle" ).click( function() {
-        $( this ).animate( { width: "400px", height: "400px" }, 2000 );
-      });
-
-      $( ".redSquare" ).click( function() {
-        $( this ).css( "display", "none" );
-      });
-
-      $( "#toggle" ).click( function() {
-        var displayValue = $( "#text" ).css( "display");
-
-        if( displayValue == "none" ){
-          $( "#text" ).fadeIn();
-
-        } else {
-          $( "#text" ).fadeOut();
-          
-        }
-      });
+      var regex = /is/;
+      var string = "Regex is great!";
+      var result = string.match ( regex );
+      
+      if ( result ) {
+        alert( "It's in there!");
+      }
+     
     </script>
 
   </body>
