@@ -10,6 +10,16 @@ body {
   padding: 5px;
   border: solid 1px black;
   border-right: none;
+  margin-top: 3px;
+}
+
+.active {
+  background-color: red;
+
+}
+
+.highlightedButton {
+  background-color: gray;
 }
 /* IDs */
 #topBar {
@@ -27,9 +37,8 @@ body {
 }
 
 #buttonContainer{
-  background-color: red;
-  margin: 3px 0;
-  width: 100;  
+  margin: 0 auto;
+  width: 250px;;  
 }
 
 #html{
