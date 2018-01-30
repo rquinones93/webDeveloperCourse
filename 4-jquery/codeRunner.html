@@ -39,8 +39,8 @@
 
     <div id="buttonContainer">
       <div class="toggleButton active" id="html">HTML</div>
-      <div class="toggleButton">CSS</div>
-      <div class="toggleButton">JavaScript</div>
+      <div class="toggleButton" id="css">CSS</div>
+      <div class="toggleButton" id="js">JavaScript</div>
       <div class="toggleButton active" id="output">Output</div>
     </div>
 
@@ -48,7 +48,19 @@
 
   <!-- Code Text Areas -->
   <div id="codeContainer">
+    <textarea id="htmlPanel" class="panel">
+      <p id="paragraph">Hello World!</p>
+    </textarea>
 
+    <textarea id="cssPanel" class="panel hidden">
+      p { color: green; }
+    </textarea>
+
+    <textarea id="jsPanel" class="panel hidden">
+      document.getElementById( "paragraph" ).innerHTML = "Hello Robert!";
+    </textarea>
+
+    <iframe id="outputPanel" class="panel"></iframe>
 
   </div>
   <!-- Link to my JS -->
