@@ -35,9 +35,9 @@
     <button id="toggle">Toggle</button>
 
     <script type="text/javascript">
-      $( "#greenCircle" ).click( function() {
-        $( "#greenCircle" ).css( "background-color", "red" );
 
+      $( "#greenCircle" ).click( function() {
+        $( this ).animate( { width: "400px", height: "400px" }, 2000 );
       });
 
       $( ".redSquare" ).click( function() {
