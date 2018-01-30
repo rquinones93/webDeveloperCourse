@@ -16,15 +16,12 @@
   <meta content="html">
 
   <!-- Codemirror Links -->
+  <link rel="stylesheet" type="text/css" href="codemirror/lib/codemirror.css">
   <!-- Link to Styling -->
   <link type="text/css" rel="stylesheet" href="codeRunnerStyle.css">
 
   <!-- Link to jQuery -->
   <script type="text/javascript" src="jquery/jquery-3.2.1.min.js"></script>
-
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
 
 </head>
 
@@ -45,23 +42,23 @@
 
   <!-- Code Text Areas -->
   <div id="codeContainer">
-    <textarea id="htmlPanel" class="panel">
-      <p id="paragraph">Hello World!</p>
-    </textarea>
+    <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World!</p></textarea>
 
-    <textarea id="cssPanel" class="panel hidden">
-      p { color: green; }
-    </textarea>
+    <textarea id="cssPanel" class="panel hidden">p { color: green; }</textarea>
 
-    <textarea id="jsPanel" class="panel hidden">
-      document.getElementById( "paragraph" ).innerHTML = "Hello Robert!";
-    </textarea>
+    <textarea id="jsPanel" class="panel hidden">document.getElementById( "paragraph" ).innerHTML = "Hello Robert!";</textarea>
 
     <iframe id="outputPanel" class="panel"></iframe>
 
   </div>
+
+  <!-- Link to CodeMirror  -->
+  <script type="text/javascript" src="codemirror/lib/codemirror.js"></script>
+  <script src="codemirror/mode/javascript/javascript.js"></script>
+
   <!-- Link to my JS -->
   <script type="text/javascript" src="codeRunnerJS.js"></script>
+  
 </body>
 
 </html>
